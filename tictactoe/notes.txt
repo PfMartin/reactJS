@@ -1,0 +1,4 @@
+https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment
+React Tutorial from their website
+
+Setup is done - Go on with the tutorial at section Overview
