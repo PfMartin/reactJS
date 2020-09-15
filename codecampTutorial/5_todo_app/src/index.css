@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 50vw;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+
+/* Header */
+.navbar {
+  height: 30px;
+  color: #fff;
+  background: #333;
+  text-align: center;
+}
+
+.navbar p {
+  text-align: center;
+  line-height: 30px;
+}
+
+/* MainContent */
+main {
+  padding: 5px;
+  height: 300px;
+}
+main h1 {
+  text-align: center;
+}
+
+main .todos {
+  display: flex;
+  flex-direction: column;
+}
+
+main .todos .todo-item {
+  padding: 5px;
+}
+
+
+/* Footer */
+.foot {
+  height: 30px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: #333;
+}
+
+.foot p {
+  line-height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+Setup for creating a new app:
+- npx create-react-app <name-of-app>
+- Delete source files
+  - cd <name-of-app>
+  - cd src
+  - rm -vf *
+- Start server:
+  - npm start
+
+File Structure:
+- node_modules
+- package.json
+- package-lock.json
+- public
+  - favicon.ico
+  - index.html        <------
+  - logo192.png
+  - logo512.png
+  - manifest.json
+  - robots.txt
+- README.md
+- src
+  - Create index.js   <------
+  - Create index.css  <------
+
+Free tutorial provided by freeCodeCamp.org on youTube.com
+www.youtube.com/watch?v=DLX62G4lc44
+
+What is covered in this tutorial:
+- Components
+- JSX
+- Styling
+- Props
+- State
+- Event Handling
+- HTTP
+- Forms
+- Lifecycle Methods
+
+Projects:
+- Todo List
+- Meme generator
+
+1. Why ReactJs
+- Virtual DOM
+  - A lot faster than real DOM in Vanilla JavaScript
+- Reusable Components
+  - Code looks a lot nicer
+  - Components can be used again in another app
+- Maintained by Facebook: Smart people
+- Very hirable
+
+2. JSX
+- Can only render one html Element
+  - If more elements just wrap it into a div
+  - ...or any other element
+- JSX need the import React from 'react'
+  - Whenever I use JSX I need to import React from 'react'
+  - Don't forget this when I move components to their own files
+
+3. Styling
+- class in HTML is now className
+- For labels
+  - for in HTML is now htmlFor
+- Use inline styling for dynamic styles
+  - create a JavaScript object with the styles
+  - Every time there is a dash in the css-style use camel case in JavaScript
+    - background-color --> backgroundColor
+    - grid-template-columns --> gridTemplateColumns
+  - Units
+    - Default unit is px
+    - height: 24 will be measured in px
+    - If you want to use a different unit, the entire expression should be in quotes
+    - height: "2rem"
+    - width: "14px" is also possible
+4. Lifecycle Methods
+- render()
+- static getDerivedStateFromProps()  --> new
+- getSnapshotBeforeUpdate()  --> new
+- componentWillMount()  --> Will be removed soon
+- componentDidMount()
+- componentWillReceiveProps(nextProps) { --> Will be removed soon
+    if(nextProps.whatever !== this.props.whatever) {
+      // do something important
+    }
+  }
+- shouldComponentUpdate(nextProps, nextState)
+- componentWillUpdate()  --> Will be removed soon
+- componentWillUnmount()
