@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 
 class MainScreen extends React.Component {
   constructor() {
